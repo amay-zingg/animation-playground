@@ -53,6 +53,8 @@ tlanimation3.to('.circle2', 1, {x: 100, ease: Elastic.easeOut}, 'circleRectangle
 .to('.square2', 1, {x: 100, ease: Back.easeIn})
 .to('.rectangle2', 1, {x: 100, ease: Elastic.easeOut}, 'circleRectangle');
 
+
+
 // * * * * PLAYBACK CONTROLS
 var tlshapes = new TimelineMax();
 
