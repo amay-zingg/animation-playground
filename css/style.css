@@ -6,6 +6,81 @@
   position: relative;
 }
 
+/* * * * * * * * * * * * * * COMMENT * * * * * * * * * * * * * * */
+h1,
+h2,
+h3 {
+  font-size: 3rem;
+  padding: 20px 0;
+  text-shadow: 1px 1px 1px maroon;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: firebrick;
+  text-shadow: 1px 1px 1px moccasin, 1px 1px 5px moccasin;
+}
+
+main {
+  width: 100%;
+  @include flexbox(
+    $placeItems: center,
+    $placeContent: center,
+    $direction: column,
+    $wrap: wrap
+  );
+}
+
+section {
+  width: 100%;
+  padding: 0.5em;
+  @include flexbox(
+    $placeItems: center,
+    $placeContent: center,
+    $direction: column,
+    $wrap: wrap
+  );
+}
+
+section h1,
+section h1 span {
+  display: block;
+}
+
+.section-content {
+  width: 100%;
+  border: 1px solid maroon;
+  border-radius: 15px;
+  margin: 1em 0;
+  @include flexbox(
+    $placeItems: center,
+    $placeContent: space-around,
+    $direction: row,
+    $wrap: wrap
+  );
+}
+
+.left,
+.right {
+  width: 50%;
+  text-align: left;
+  padding: 1em;
+  position: relative;
+  @include flexbox(
+    $placeItems: center,
+    $placeContent: center,
+    $direction: column,
+    $wrap: wrap
+  );
+}
+
+/* * * * * * * * * * * * * * COMMENT * * * * * * * * * * * * * * */
+
 .page-change-button-container {
   height: 10vh;
   display: flex;

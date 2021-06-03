@@ -10,20 +10,53 @@
 <body>
 
     <div class="page-change-button-container">
+        <a href="index.html" class="page-change-button">Go to other page</a>
+        <a href="thispage.html">Go to this page</a>
         <a href="other.html" class="page-change-button">Go to other page</a>
     </div>
 
     <main>
-        <div class="circle"></div>
-        <div class="square"></div>
-        <div id="rectangle"></div>
-
-        <ul>
-            <li>Husky</li>
-            <li>Husky</li>
-            <li>Husky</li>
-            <li>Husky</li>
-        </ul>
+        <div class="section-content">
+            <div class="left">
+                <svg id="section2" class="section2" xmlns="http://www.w3.org/2000/svg" height="300" width="300"
+                    viewBox="0 0 300 300">
+                    <image id="aurora" class="aurora" href="assets/SVGs/aurora.svg" alt="Aurora" x="0" y="0" height="300">
+                    </image>
+        
+                    <image id="jack2" class="jack2" href="assets/SVGs/jackolantern.svg" alt="Jack-o-lantern" x="0" y="0"
+                        height="100" width="100"></image>
+                </svg>
+            </div>
+            <div class="right">
+                <h1>Viewbox play</h1>
+            </div>
+        </div>
+        
+        <div class="section-content">
+            <div class="left">
+                <svg id="section1" class="section1" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 100 100" height="300"
+                    width="300">
+                    <filter id="offset">
+                        <feConvolveMatrix order="4,4" kernelMatrix="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" in="SourceAlpha"
+                            result="BEVEL" />
+                        <feOffset dx="1" dy="0" in="BEVEL" result="OFFSET" />
+                        <feGaussianBlur in="OFFSET" result="BLUR" stdDeviation="1" dx="2" dy="2" />
+                        <feMerge>
+                            <feMergeNode in="OFFSET" />
+                            <feMergeNode in="BLUR" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+        
+                    <image id="jack" class="jack" href="assets/SVGs/jackolantern.svg" alt="Jack-o-lantern" filter="url(#offset)"
+                        x="0" y="0" height="40" width="40"></image>
+                </svg>
+            </div>
+            <div class="right">
+                <h1>Tweening Basics - rotation and transform origin</h1>
+                <p>Also svg offset and gaussian blur</p>
+            </div>
+        </div>
     </main>
 
     <!-- JQuery -->

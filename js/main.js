@@ -1,3 +1,49 @@
+function sectionOne() {
+  gsap.from([".jack", ".jack2"], 4, {
+    transformOrigin: "center",
+    x: 0,
+  });
+
+  gsap.to(".jack2", 4, {
+    x: 200,
+  });
+  gsap.to(".jack2", 2, {
+    y: 200,
+    ease: Bounce.easeOut,
+    delay: 1,
+  });
+
+  gsap.to(".jack", 4, {
+    transformOrigin: "center",
+    rotation: 360,
+    scale: 1000 / 600,
+    x: 10,
+    ease: Bounce.easeIn,
+    delay: 1,
+  });
+}
+
+sectionOne();
+
+function sectionThree() {
+  let ele = document.getElementById("turbulence");
+
+  gsap.from(".canada", 1, {
+    opacity: 0,
+    ease: "back.out(2)",
+  });
+
+  gsap.to(".canada", { opacity: 1, y: 40, duration: 2 });
+
+  gsap.to(ele, 3, { attr: { baseFrequency: "0 0" } });
+}
+
+sectionThree();
+
+
+
+
+
 // TweenMax.to('.circle', 2, {x: 150, y: 150, borderRadius: '40%' });
 
 // TweenMax.to('.square', 2, {x: -150, y: -150, scale: 2, delay: 1, ease: Back.easeOut });
