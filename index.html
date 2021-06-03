@@ -8,10 +8,10 @@
 </head>
 
 <body>
-
+<div class="wrapper">
     <div class="page-change-button-container">
         <a href="index.html" class="page-change-button">Go to other page</a>
-        <a href="thispage.html">Go to this page</a>
+        <a href="thispage.html" class="page-change-button">Go to this page</a>
         <a href="other.html" class="page-change-button">Go to other page</a>
     </div>
 
@@ -20,10 +20,10 @@
             <div class="left">
                 <svg id="section2" class="section2" xmlns="http://www.w3.org/2000/svg" height="300" width="300"
                     viewBox="0 0 300 300">
-                    <image id="aurora" class="aurora" href="assets/SVGs/aurora.svg" alt="Aurora" x="0" y="0" height="300">
+                    <image id="aurora" class="aurora" href="assets/Aurora.svg" alt="Aurora" x="0" y="0" height="300">
                     </image>
         
-                    <image id="jack2" class="jack2" href="assets/SVGs/jackolantern.svg" alt="Jack-o-lantern" x="0" y="0"
+                    <image id="jack2" class="jack2" href="assets/jackolantern.svg" alt="Jack-o-lantern" x="0" y="0"
                         height="100" width="100"></image>
                 </svg>
             </div>
@@ -48,7 +48,7 @@
                         </feMerge>
                     </filter>
         
-                    <image id="jack" class="jack" href="assets/SVGs/jackolantern.svg" alt="Jack-o-lantern" filter="url(#offset)"
+                    <image id="jack" class="jack" href="assets/jackolantern.svg" alt="Jack-o-lantern" filter="url(#offset)"
                         x="0" y="0" height="40" width="40"></image>
                 </svg>
             </div>
@@ -57,14 +57,16 @@
                 <p>Also svg offset and gaussian blur</p>
             </div>
         </div>
+        </div>
     </main>
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/easing/EasePack.min.js"></script> -->
 
     <script src="js/main.js"></script>
 </body>

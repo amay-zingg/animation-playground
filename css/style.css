@@ -7,6 +7,12 @@
 }
 
 /* * * * * * * * * * * * * * COMMENT * * * * * * * * * * * * * * */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
 h1,
 h2,
 h3 {
@@ -35,21 +41,6 @@ main {
   flex-wrap: wrap;
 }
 
-section {
-  width: 100%;
-  padding: 0.5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-section h1,
-section h1 span {
-  display: block;
-}
-
 .section-content {
   width: 100%;
   border: 1px solid maroon;
@@ -64,15 +55,38 @@ section h1 span {
 
 .left,
 .right {
-  width: 50%;
+  width: 45%;
   text-align: left;
   padding: 1em;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+}
+
+/* * * * * * * * * * * * * * MEDIA QUERIES * * * * * * * * * * * * * * */
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
 }
 
 /* * * * * * * * * * * * * * COMMENT * * * * * * * * * * * * * * */
@@ -91,13 +105,7 @@ section h1 span {
   background-color: moccasin;
   border: 2px solid maroon;
   text-align: center;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
+  margin: 20px;
 }
 
 .circle,
@@ -136,7 +144,7 @@ ul li {
 }
 
 .row {
-  height: 44vh;
+  height: 40vh;
   display: flex;
   flex-flow: row wrap;
 }
@@ -186,7 +194,8 @@ ul li {
 }
 
 .playback_controls_row {
-  height: 12vh;
+  /*  Changed height to %  */
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,7 +209,7 @@ ul li {
   border-radius: 5px;
   font-family: arial;
   display: inline-block;
-  margin-right: 15px;
+  margin: 20px;
 }
 
 /*Shapes*/

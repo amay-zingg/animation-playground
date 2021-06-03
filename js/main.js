@@ -25,21 +25,6 @@ function sectionOne() {
 
 sectionOne();
 
-function sectionThree() {
-  let ele = document.getElementById("turbulence");
-
-  gsap.from(".canada", 1, {
-    opacity: 0,
-    ease: "back.out(2)",
-  });
-
-  gsap.to(".canada", { opacity: 1, y: 40, duration: 2 });
-
-  gsap.to(ele, 3, { attr: { baseFrequency: "0 0" } });
-}
-
-sectionThree();
-
 
 
 
@@ -54,7 +39,7 @@ sectionThree();
 
 TweenMax.to($('.circle'), 2, {x: 150, y: 150, borderRadius: '40%' });
 
-TweenMax.to($('.square'), 2, {x: -150, y: -150, scale: 2, delay: 1, ease: Back.easeOut });
+TweenMax.to($('.square'), 2, {x: -150, y: 150, scale: 2, delay: 1, ease: Back.easeOut });
 
 TweenMax.from($('#rectangle'), 2, {y:200, rotation: 180, scale: 1.5 });
 
