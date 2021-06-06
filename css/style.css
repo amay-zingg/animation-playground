@@ -89,7 +89,23 @@ main {
   }
 }
 
-/* * * * * * * * * * * * * * COMMENT * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * MOTION PATH * * * * * * * * * * * * * * */
+/* #motionPath {
+  overflow: visible;
+  height: 100%;
+  max-width: 100%;
+}
+
+#motionPath path {
+  stroke-width: 2;
+  stroke: gray;
+}
+
+#motionPath .jackolantern {
+  visibility: hidden;
+} */
+
+/* * * * * * * * * * * * * * PAGE WITH THE BOXES * * * * * * * * * * * * * * */
 
 .page-change-button-container {
   height: 10vh;
