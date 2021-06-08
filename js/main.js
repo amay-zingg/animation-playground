@@ -26,6 +26,30 @@ $(document).ready(function(){
   }
 
   sectionOne();
+
+    function sectionTwo() {
+    gsap.from([".jack3"], 4, {
+      transformOrigin: "center",
+      x: 0,
+    });
+
+    gsap.to(".jack3", 4, {
+      x: 200,
+      ease: Back.easeout
+    });
+   
+
+    gsap.to(".jack3", 4, {
+      transformOrigin: "center",
+      rotation: 360,
+      scale: 1000 / 600,
+      x: 10,
+      ease: Bounce.easeIn,
+      delay: 1,
+    });
+  }
+
+  sectionTwo();
   
 
 function sectionThree() {
