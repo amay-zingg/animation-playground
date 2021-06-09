@@ -28,23 +28,25 @@ $(document).ready(function(){
   sectionOne();
 
     function sectionTwo() {
-    gsap.from([".jack3"], 4, {
+    gsap.from([[jackie, jackieTwo, jackieThree, jackieFour]], 4, {
       transformOrigin: "center",
       x: 0,
     });
 
-    gsap.to(".jack3", 4, {
+    gsap.to([jackie, jackieTwo, jackieThree, jackieFour], 4, {
       x: 200,
+      y: 50,
       ease: Back.easeout
     });
    
 
-    gsap.to(".jack3", 4, {
+    // * * * * DON'T NEED "" or # just the name of the ID
+    gsap.to([jackie, jackieTwo, jackieThree, jackieFour], 4, {
       transformOrigin: "center",
       rotation: 360,
-      scale: 1000 / 600,
-      x: 10,
-      ease: Bounce.easeIn,
+      scale: 1.05,
+      x: 50,
+      ease: Power2.easeIn,
       delay: 1,
     });
   }
