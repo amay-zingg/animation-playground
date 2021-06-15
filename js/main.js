@@ -1,3 +1,12 @@
+function hollowCircle() {
+  let el = document.getElementById("turbulence");
+  gsap.set("#theCircle", { opacity: 1, ease: Power1.easeIn });
+  gsap.to(el, 3, { attr: { baseFrequency: "0 0" } });
+
+}
+
+hollowCircle();
+
 function sectionOne() {
     gsap.from([".jack", ".jack2"], 4, {
       transformOrigin: "center",

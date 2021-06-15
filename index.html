@@ -16,7 +16,40 @@
     </div>
 
     <main>
-        
+    <!-- <div class="section-content">
+    <div class="left">
+        <!-- SVG HERE -->
+    <!-- </div>
+    <div class="right">
+        <h1>Title</h1>
+        <p class="link">Link: <a href="">Youtube Link</a>
+            <a href=""></a>
+        </p>
+    </div>
+    </div> -->
+
+    <!-- https://css-tricks.com/blobs/ https://codepen.io/SitePoint/pen/ALAakG LOOKAT -->
+
+        <div class="section-content">
+            <div class="left">
+                <svg id="theCircle" width="400" height="400">
+                    <filter id="noise" x="0" y="0">
+                        <feTurbulence baseFrequency="0.01 0.01" result="NOISE" numOctaves="8" id="turbulence" />
+                        <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="10" />
+                    </filter>
+
+                    <circle id="hollowCircle" cx="150" cy="150" r="90" fill="none" stroke="maroon" stroke-width="1" >
+                    
+                        <!-- <animateTransform attributeName="transform" type="rotate" begin="1s" dur="10s" from="0 40 30" to="36 40 30" /> -->
+                    </circle>
+
+                    <!-- <circle id="mycircle" cx="100" cy="100" r="50" /> -->
+                </svg>
+            </div>
+            <div class="right">
+                <h1>Title</h1>
+            </div>
+        </div>
 
         <div class="section-content">
             <div class="left">

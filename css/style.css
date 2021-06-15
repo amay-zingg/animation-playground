@@ -105,6 +105,13 @@ main {
   visibility: hidden;
 } */
 
+/* * * * * * * * * * * * * * INDEX PAGE * * * * * * * * * * * * * * */
+#hollowCircle {
+  filter: url(#noise);
+  /* stroke: red;
+  stroke-width: 10; */
+}
+
 /* * * * * * * * * * * * * * PAGE WITH THE BOXES * * * * * * * * * * * * * * */
 
 .page-change-button-container {
